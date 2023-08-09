@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature checker</title>
+    <link rel="stylesheet" href="Abdulhameed-Abdulsalam.css">
+</head>
+<body>
+     <div class="container">
+        <h1>Interactive Temperature Converter</h1>
+        <div class="conversion-form">
+            <div>
+                <div>
+                    <h3>Convert from:</h3>
+                    <div class="celsiusbox">
+                        <label for="from">celsius</label>
+                        <input type="radio" id="from" placeholder="Celsius">
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" placeholder="Enter temperature" required>
+
+            <button id="convert">Convert</button>
+
+            <label for="to">Convert to:</label>
+            <select id="to">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+
+            <p id="result"></p>
+        </div>
+    </div>
+    
+</body>
+</html>
