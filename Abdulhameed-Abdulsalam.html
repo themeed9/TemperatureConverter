@@ -10,29 +10,32 @@
      <div class="container">
         <h1>Interactive Temperature Converter</h1>
         <div class="conversion-form">
-            <div>
-                <div>
-                    <h3>Convert from:</h3>
-                    <div class="celsiusbox">
-                        <label for="from">celsius</label>
-                        <input type="radio" id="from" placeholder="Celsius">
-                    </div>
-                </div>
-            </div>
-            
-            
-
-            <label for="temperature">Temperature:</label>
-            <input type="number" id="temperature" placeholder="Enter temperature" required>
-
+            <form action="radio-option">
+                <h4>Convert from:</h4>
+                <label for="Celsius">
+                    <input type="radio" name="form" id="Celsius" checked="checked">
+                    Celsius
+                </label>
+                <label for="Fahrenheit">
+                    <input type="radio" name="form" id="Fahrenheit">
+                    Fahrenheit
+                </label>
+                <br>
+            </form>
+            <input type="number" class="number" name="form" placeholder="Enter number">
+            <form action="radio-convert">
+                <h4>Convert to:</h4>
+                <label for="Celsius2">
+                    <input type="radio" name="form" id="Celsius2">
+                    Celsius
+                </label>
+                <label for="Fahrenheit2">
+                    <input type="radio" name="form" id="Fahrenheit2"checked="checked">
+                    Fahrenheit
+                </label>
+            </form>
+            <input type="number" class="number" placeholder="Result">
             <button id="convert">Convert</button>
-
-            <label for="to">Convert to:</label>
-            <select id="to">
-                <option value="celsius">Celsius</option>
-                <option value="fahrenheit">Fahrenheit</option>
-            </select>
-
             <p id="result"></p>
         </div>
     </div>
