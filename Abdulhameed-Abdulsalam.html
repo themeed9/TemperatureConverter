@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature checker</title>
-    <link rel="stylesheet" href="Abdulhameed-Abdulsalam.css">
-</head>
-<body>
-     <div class="container">
-        <h1>Interactive Temperature Converter</h1>
-        <div class="conversion-form">
-            <form action="radio-option">
-                <h4>Convert from:</h4>
-                <label for="Celsius">
-                    <input type="radio" name="form" id="Celsius" checked="checked">
-                    Celsius
-                </label>
-                <label for="Fahrenheit">
-                    <input type="radio" name="form" id="Fahrenheit">
-                    Fahrenheit
-                </label>
-                <br>
-            </form>
-            <input type="number" class="number" name="form" placeholder="Enter number">
-            <form action="radio-convert">
-                <h4>Convert to:</h4>
-                <label for="Celsius2">
-                    <input type="radio" name="form" id="Celsius2">
-                    Celsius
-                </label>
-                <label for="Fahrenheit2">
-                    <input type="radio" name="form" id="Fahrenheit2"checked="checked">
-                    Fahrenheit
-                </label>
-            </form>
-            <input type="number" class="number" placeholder="Result">
-            <button id="convert">Convert</button>
-            <p id="result"></p>
+    <link rel="stylesheet" href="Abdulhameed-Abdulsalam.css" />
+  </head>
+  <body>
+    <div class="formcontainer">
+      <div>
+        <h1>Temperature Converter</h1>
+      </div>
+      <form class="form">
+        <div class="convert">
+          <div class="caption">
+            <caption>
+              Convert from:
+            </caption>
+          </div>
+          <div class="label-input">
+            <div>
+              <input type="radio" name="option1" id="Celsius" value="Celsius" />
+              <label for="Celsius">Celsius</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="option1"
+                id="Fahrenheit"
+                value="Fahrenheit"
+              />
+              <label for="Fahrenheit">Fahrenheit</label>
+            </div>
+          </div>
+          <div>
+            <div><label for="Number">Enter number</label></div>
+            <div>
+              <input
+                type="number"
+                class="input"
+                name="option1"
+                id="Number"
+                value="convert-from-number"
+              />
+            </div>
+          </div>
         </div>
+        <div class="convert">
+          <div class="caption">
+            <caption>
+              Convert to:
+            </caption>
+          </div>
+          <div class="label-input">
+            <div>
+              <input type="radio" name="option" id="Celsius2" value="Celsius" />
+              <label for="Celsius2">Celsius</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="option"
+                id="Fahrenheit2"
+                value="Fahrenheit"
+              />
+              <label for="Fahrenheit2">Fahrenheit</label>
+            </div>
+          </div>
+          <div>
+            <div><label for="convert">Enter number</label></div>
+            <div>
+              <!-- <input
+                type="number"
+                class="input"
+                name="option1"
+                id="Number2"
+                value="convert-from-number"
+              /> -->
+              <input
+                type="number"
+                class="input"
+                placeholder="Result"
+                name="result"
+                id="convert"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <button for="convert">Convert</button>
     </div>
-    
-</body>
+  </body>
 </html>
